@@ -1,0 +1,92 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      2473,         84]
+NotebookOptionsPosition[      2162,         70]
+NotebookOutlinePosition[      2520,         86]
+CellTagsIndexPosition[      2477,         83]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"Delete1", "[", "x_", "]"}], ":=", 
+   RowBox[{"Delete", "[", 
+    RowBox[{"x", ",", "1"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"Delete2", "[", "y_", "]"}], ":=", 
+   RowBox[{"Delete", "[", 
+    RowBox[{"y", ",", "2"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"data", "=", 
+   RowBox[{"Flatten", "[", 
+    RowBox[{
+     RowBox[{
+     "Import", "@", 
+      "\"\<D:\\\\Documents\\\\SONGCI\\\\data\\\\expe(1).xlsx\>\""}], ",", 
+     "1"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"data1", "=", 
+   RowBox[{"Delete2", "/@", 
+    RowBox[{"Delete2", "/@", "data"}]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Export", "[", 
+   RowBox[{
+   "\"\<D:\\\\Documents\\\\SONGCI\\\\Final\\\\Final_1.xlsx\>\"", ",", 
+    "data1"}], "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"data2", "=", 
+   RowBox[{"Flatten", "[", 
+    RowBox[{
+     RowBox[{
+     "Import", "@", 
+      "\"\<D:\\\\Documents\\\\SONGCI\\\\data\\\\expr(1).xlsx\>\""}], ",", 
+     "1"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"data3", "=", 
+   RowBox[{"Delete1", "/@", 
+    RowBox[{"Delete2", "/@", "data2"}]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Export", "[", 
+   RowBox[{
+   "\"\<D:\\\\Documents\\\\SONGCI\\\\Final\\\\Final_2.xlsx\>\"", ",", 
+    "data3"}], "]"}], ";"}]}], "Input",
+ CellChangeTimes->{{3.774594818971137*^9, 3.774594847122992*^9}, {
+  3.774595024561696*^9, 
+  3.774595031126113*^9}},ExpressionUUID->"b4220d2e-26fd-42f2-89a3-\
+0b5765e8e56a"]
+},
+WindowSize->{751, 792},
+WindowMargins->{{Automatic, 575}, {Automatic, 108}},
+FrontEndVersion->"11.3 for Microsoft Windows (64-bit) (2018\:5e743\:670828\
+\:65e5)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 1600, 48, 268, "Input",ExpressionUUID->"b4220d2e-26fd-42f2-89a3-0b5765e8e56a"]
+}
+]
+*)
+
