@@ -3,7 +3,7 @@
 
 使用[Wolfram Mathematica](http://www.wolfram.com/mathematica/?source=nav)编写。
 
-宋词的数据库来自[github:chinese-poetry](https://github.com/chinese-poetry/chinese-poetry).
+宋词的数据库来自[chinese-poetry](https://github.com/chinese-poetry/chinese-poetry).
 
 # Preview
 ![Authors](https://raw.githubusercontent.com/GabrielLsq/WordCloud_of_Songci/master/Word_Cloud_of_Songci/Word_Cloud_Images/1.png)
